@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  position: relative;
   background: #080808;
   color: #f4ebe2;
 }
@@ -90,7 +91,7 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
-  background-color: #214566;
+  background: linear-gradient(to right, #214566, #14293d, #214566);
 }
 .row {
   display: flex;
@@ -157,7 +158,7 @@ nav ul li a:hover::after {
 /* --------------------- projects -------------------- */
 #projects {
   padding: 50px 0;
-  background-color: #1a3752;
+  background: linear-gradient(to left, #1a3752, #2c4b6f);
 }
 .work-list {
   display: grid;
@@ -239,7 +240,7 @@ nav ul li a:hover::after {
 /* --------------------- hobbies -------------------- */
 #hobbies {
   padding: 30px 0;
-  background-color: #14293d;
+  background: linear-gradient(to bottom right, #14293d, #572442);
 }
 .hobbies-list {
   display: grid;
@@ -287,7 +288,7 @@ nav ul li a:hover::after {
 
 /* -------------------- contact ----------------- */
 #contact {
-  background: linear-gradient(#14293d, #8c3c6c);
+  background: linear-gradient(to bottom left, #1a2a52, #111b36);
 }
 .contact-left {
   flex-basis: 35%;
@@ -332,25 +333,31 @@ form textarea {
   border: 0;
   outline: none;
   background: #ababab;
-  padding: 15px;
+  padding: 10px;
   margin: 15px 0;
   color: #080808;
   font-size: 18px;
   border-radius: 6px;
 }
 form .btn2 {
-  padding: 14px 60px;
+  padding: 10px 60px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
 }
+/* Footer styling to push it to the bottom */
 .copyright {
-  width: 100%;
-  text-align: center;
-  padding: 25px 0;
+  position: absolute; /* Changed to absolute */
+  bottom: 0; /* Anchors it to the bottom */
+  left: 0; /* Stretches from the left */
+  width: 100%; /* Ensures it spans the full width of the viewport */
+  text-align: center; /* Keeps the text centered */
+  font-size: 12px;
+  padding: 15px 0;
   background: #262626;
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: auto; /* Pushes it to the bottom if there is no other content pushing it down */
+  color: #f4ebe2; /* Adjust text color for better visibility if needed */
 }
 .copyright i {
   color: #6d8184;
@@ -435,18 +442,18 @@ nav .fa-solid {
   height: auto; /* Keeps the image aspect ratio */
 }
 #education {
-  background-color: #1a3752; /* Consistent background color with projects */
+  background-color: #214566; /* Consistent background color with projects */
   color: #f4ebe2; /* Light text for readability on dark background */
   padding: 5px 0; /* Uniform padding with other sections */
 }
 #skills {
-  background-color: #1a3752; /* Consistent background color with projects */
+  background-color: #214566; /* Consistent background color with projects */
   color: #f4ebe2; /* Light text for readability on dark background */
   padding: 5px 0; /* Uniform padding with other sections */
 }
 
 #experience {
-  background-color: #1a3752; /* Consistent background color with projects */
+  background-color: #214566; /* Consistent background color with projects */
   color: #f4ebe2; /* Light text for readability on dark background */
   padding: 5px 0; /* Uniform padding with other sections */
 }
