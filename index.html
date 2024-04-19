@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Carlie Stewart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2d4c61b849.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Extras</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, my name is <span>Carlie</span> Stewart.</h1>
+          <p id="typing-text"></p>
+        </div>
+      </div>
+    </div>
+    <!-- -------------about----------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm Carlie Stewart, and welcome to my personal portfolio. As an undergraduate at the University of Virginia, I am currently pursuing a double major in Computer Science and Cognitive Science, with a minor in Data Science.
+                        </p>
+            <p>
+              <br />I am passionate about learning new things and breaking abstract problems into more digestable and concrete ideas step by step. I always enjoy learning from new perspectives and finding new approaches to problems.
+            </p>
+            <p>
+              <br />
+              I am always searching for new ways to learn whether that be through internships, work, or research. I decided to double major in Computer Science and Cognitive Science in hopes of using knowledge from both majors to pursue a career in the realm of artificial ntelligence and software development and and exploring how technology can solve real-world challenges. Additionally, I am eager to collaborate with others and contribute to projects that have a positive impact on society.              </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="openTab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience', event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education', event)">
+                Education
+              </p>
+            </div>
+            <!-- ------ skills ------------ -->
+            <div class="tab-contents active-tab" id="skills">
+              <div class="education-details">
+                  <header><h2>Skills</h2></header>
+                  <ul class="details">
+                      <li>Python, Java, C, HTML, CSS, JavaScript, React, R, Django, Bootstrap, SQL, Linux, Powershell</li>
+                  </ul>
+              </div>
+            </div>
+            <!-- ------ experience ------------ -->
+
+            <div class="tab-contents" id="experience">
+              <div class="education-details">
+                  <header><h2>Experience</h2></header>
+                  <ul class="details">
+                      <li><span class="dates">August 2022 - Present</span><br />University of Virginia FM IT Student Help Desk Technician</li>
+                      <li><span class="dates">May 2023 - August 2023</span><br />IT Intern at STIHL Inc.</li>
+                      <li><span class="dates">August 2022 - May 2023</span><br />CS 2100: Data Structures and Algorithms I Undergraduate Teaching Assistant</li>
+                  </ul>
+              </div>
+          </div>
+            <!-- ------ education ------------ -->
+            <div id="education" class="tab-contents">
+              <section class="education-details">
+                <header>
+                  <h2>Education</h2>
+                </header>
+                <ul>
+                  <li>
+                    <strong>University of Virginia</strong>
+                    <span class="dates">August 2021 - May 2025</span>
+                    <p>College of Arts & Sciences</p>
+                    <ul class="details">
+                      <li><strong>Majors:</strong> Computer Science & Cognitive Science</li>
+                      <li><strong>Minor:</strong> Data Science</li>
+                      <li><strong>GPA:</strong> 3.6</li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------- projects -------------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/wordle.png" />
+            <div class="layer">
+              <h3>Wordle App</h3>
+              <p>Tech stack: Java, JavaFX</p>
+              <p>
+                <br />Inspired by the NYT web game, using Java and JavaFX for the GUI,
+                the goal is to guess a 5-letter word in 6 attempts, with the
+                color of the letters indicating the accuracy of the letters in
+                relation to the correct 5-letter word.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Course Review App</h3>
+              <p>Tech stack: Java, JavaFX, SQLite</p>
+              <p>
+                <br />This is a project created using the MVC architechture with
+                Java, JavaFX for the frontend GUI, and SQLite for database
+                management/storage. It allows users to create and log in with a
+                username and password, and write/view course evaluations for
+                courses at the University of Virginia.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/port-photo.png" />
+            <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>Tech stack: HTML, CSS, JavaScript, React</p>
+              <p>
+                <br />Serving as my first personal portfolio built in March
+                2024, this highlights a bit of my personality and academic
+                experiences. I hope this helps you learn a bit more about me!
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">More coming soon...</a>
+      </div>
+    </div>
+    <!-- --------------------hobbies -------------- -->
+    <div id="hobbies">
+      <div class="container">
+        <h1 class="sub-title">Extras</h1>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab('leadership-content', event)">Leadership</p>
+          <p class="tab-links" onclick="openTab('hobbies-content', event)">Hobbies</p>
+
+        </div>
+                <!-----------leadership----------------->
+                <div id="leadership-content" class="tab-contents" style="display: block;">                  <div class="content">
+                    <div class="hobbies-list">
+                      <div>
+                        <img src="images/csa.png" alt="">
+                        <h2>Chinese Student Association</h2>
+        
+                        <p>
+                        I was treasurer for the 2023-2024 school year. I managed budgets and finances for the organization. Responsibilities include applying to grants for our major events and overseeing the workings of CSA's officer board with the rest of the executive team!</p>
+                        <p><br>I was fundraising chair from 2022-2023. I was in charge of organizing fundraisers with local businesses and restaurants for an organization of 300+ members.
+                        </p>
+                      </div>
+                      <div>
+                        <img src="images/akdphi.png" alt="">
+                        <h2>alpha Kappa Delta Phi</h2>
+                        <p>I was treasurer for the calendar year 2023. I helped organize our largest event, Mr. Pink Pageant, which raised over $1000 for breast cancer awareness. I also managed the organization's budgets, dues collection, and finances.</p>
+                        <p><br>I also served as secretary and reveals coordinator for the chapter, which helped me gain experience with large event planning and organizational skills.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <!-- ------------ hobbies -->
+        <div id="hobbies-content" class="tab-contents" style="display: none;">
+          <div class="content">
+            <div class="hobbies-list">
+              <div>
+                <img src="images/music.png" />
+                <i class="fa-solid fa-music"></i>
+                <h2>Music</h2>
+                <p>I like listening to music and curating new playlists!</p>
+                <a
+                  href="https://open.spotify.com/user/c6apvd0kdkrn4ojm18sr3zstd?si=5d10d2b91a1a49bb"
+                >
+                  <u>Check out my Spotify!</u>
+                </a>
+              </div>
+              <div>
+                <img src="images/hiking.png" alt="Humpback Rock in Charlottesville, VA">
+                <i class="fa-solid fa-tree"></i>
+                <h2>Enjoying nature</h2>
+                <p>I enjoy exercising, hiking, and spending time at the beach!</p>
+              </div>
+              <div>
+                <img src="images/travel.png" alt="Griffith Observatory in Los Angeles, CA"/>
+                <i class="fa-solid fa-plane"></i>
+                <h2>Travelling</h2>
+                <p>Travelling and getting to see new parts of the world is so exciting!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- ------------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-paper-plane"></i> ayu6cp@virginia.edu</p>
+            <p><i class="fa-solid fa-phone"></i> 7579154697</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/carliestewartt"
+              ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/carliestewartt"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/carliestewart"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/clstew47/"
+                ><i class="fa-brands fa-github-alt"></i
+              ></a>
+            </div>
+            <a href="images/Carlie Stewart Resume.pdf" download class="btn btn2"
+              >download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="name" required />
+              <input type="email" name="email" placeholder="email" required />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Carlie Stewart 2024 <i class="fa-solid fa-cat"></i></p>
+      </div>
+    </div>
+
+    <script>
+      // ---------this is for switching tabs ------------
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      // function opentab(tabname, event) {
+      //   for (tablink of tablinks) {
+      //     tablink.classList.remove("active-link");
+      //   }
+      //   for (tabcontent of tabcontents) {
+      //     tabcontent.classList.remove("active-tab");
+      //   }
+      //   event.currentTarget.classList.add("active-link");
+        
+      //   document.getElementById(tabname).classList.add("active-tab");
+      // }
+    </script>
+
+
+    <script>
+      // ---------this is for opening/closing navbar ------------
+
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      // ---------this is for contact information sheet ------------
+
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbweIgJlbHpLiINH980ZtS_w0SvAiGnMI71Syp450n6edEXd1A9MLT4z7d-8XEZmUEbJ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "message sent successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      // ---------this is for typewriter animation ------------
+
+      const text = "student, computer scientist, & cognitive scientist";
+      const typingSpeed = 50;
+      let index = 0;
+      let backspacing = false;
+
+      function typeWriter() {
+        if (!backspacing) {
+          if (index < text.length) {
+            document.getElementById("typing-text").innerHTML +=
+              text.charAt(index);
+            index++;
+            setTimeout(typeWriter, typingSpeed);
+          } else {
+            backspacing = true;
+            setTimeout(typeWriter, 5000); // wait for 5 seconds before backspacing
+          }
+        } else {
+          if (index >= 0) {
+            document.getElementById("typing-text").innerHTML = text.substring(
+              0,
+              index
+            );
+            index--;
+            setTimeout(typeWriter, typingSpeed);
+          } else {
+            backspacing = false;
+            index = 0;
+            setTimeout(typeWriter, 2000);
+          }
+        }
+      }
+
+      window.onload = function () {
+        typeWriter();
+      };
+    </script>
+    <script>
+      function openExtrasTab(tabname, event) {
+  var extrasTablinks = document.querySelectorAll('.extras .tab-links');
+  var extrasTabcontents = document.querySelectorAll('.extras .tab-contents');
+  
+  for (let tablink of extrasTablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (let tabcontent of extrasTabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+  // Function to handle tab switching for all tabs
+  function openTab(tabName, event) {
+    // Retrieve all elements with class 'tab-contents' and 'tab-links' in the document
+    var tabContents = document.querySelectorAll(".tab-contents");
+    var tabLinks = document.querySelectorAll(".tab-links");
+
+    // Hide all tab contents by default
+    tabContents.forEach(function(content) {
+        content.style.display = "none";
+    });
+
+    // Remove 'active-link' class from all tab links
+    tabLinks.forEach(function(link) {
+        link.classList.remove("active-link");
+    });
+
+    // Display the appropriate tab content and add 'active-link' class to the clicked tab link
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.classList.add("active-link");
+}
+
+    </script>
+  </body>
+</html>
