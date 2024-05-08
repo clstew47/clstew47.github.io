@@ -12,6 +12,6 @@ This website is built using the following technologies:
 - **FontAwesome** - external libraries for icons.
 
 ## Website Link
-Visit my portfolio here: https://clstew47.github.io/portfolio/
+Visit my portfolio here: https://clstew47.github.io/
 
 Thank you!
