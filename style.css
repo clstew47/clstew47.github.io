@@ -88,6 +88,7 @@ nav ul li a:hover::after {
   color: #808da5;
 }
 /* ------------ about ----------------- */
+
 #about {
   padding: 80px 0;
   color: #ababab;
@@ -107,6 +108,12 @@ nav ul li a:hover::after {
 }
 .about-col-2 {
   flex-basis: 60%;
+}
+.interactive-image {
+  transition: box-shadow 0.3s ease;
+}
+.interactive-image:hover {
+  box-shadow: 0 0 10px 2px #dd76bc; 
 }
 
 .sub-title {
@@ -155,6 +162,104 @@ nav ul li a:hover::after {
   display: block;
 }
 
+/* --------------------- education/skills/experience section -------------------- */
+#education {
+  background-color: #214566;
+  color: #f4ebe2; 
+  padding: 5px 0; 
+}
+#skills {
+  background-color: #214566; 
+  color: #f4ebe2; 
+  padding: 5px 0;
+}
+
+#experience {
+  background-color: #214566;
+  color: #f4ebe2;
+  padding: 5px 0; 
+}
+
+.education-details {
+  border-left: 4px solid #6d8184; 
+  padding: 20px;
+  margin: 20px 0; 
+}
+
+.education-details header h2 {
+  color: #83a27c; 
+  margin-bottom: 20px; 
+}
+
+.education-info h3 {
+  font-size: 24px; 
+  color: #f6e7e4; 
+  margin-bottom: 5px; 
+}
+
+.details {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details li {
+  padding: 10px 10px;
+  border-bottom: 1px solid #6d8184;
+}
+
+#education .details li:last-child,
+#experience .details li:last-child {
+    border-bottom: none; 
+}
+
+.dates {
+  display: block;
+  font-style: italic;
+  color: #6d8184;
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 800px) {
+  .education-details {
+    padding: 10px 20px;
+    border-left: 2px solid #6d8184;
+  }
+}
+
+/* --------------------- skills section -------------------- */
+.enhanced-skills {
+  list-style: none; 
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: start; 
+  margin: 10px 0;
+}
+
+.enhanced-skills li {
+  padding: 10px 10px 10px 14px; 
+  margin-right: 14px; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s; 
+  display: inline-flex;
+  align-items:center;
+  border-bottom: 1px solid #ccc;
+}
+
+.enhanced-skills li:hover {
+  background-color: #14293d; 
+}
+
+.enhanced-skills li i {
+  margin-right: 10px;  /* Space between icon and text */
+  margin-left: 2px;
+  color: #6d8184;  /* Icon color */
+}
+
 /* --------------------- projects -------------------- */
 #projects {
   padding: 50px 0;
@@ -170,6 +275,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  min-height: 400px;
 }
 .work img {
   width: 100%;
@@ -186,6 +292,8 @@ nav ul li a:hover::after {
   left: 0;
   bottom: 0;
   overflow: hidden;
+  overflow-y: auto;
+  max-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,68 +546,6 @@ nav .fa-solid {
 }
 
 .work img {
-  max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
-  height: auto; /* Keeps the image aspect ratio */
-}
-#education {
-  background-color: #214566; /* Consistent background color with projects */
-  color: #f4ebe2; /* Light text for readability on dark background */
-  padding: 5px 0; /* Uniform padding with other sections */
-}
-#skills {
-  background-color: #214566; /* Consistent background color with projects */
-  color: #f4ebe2; /* Light text for readability on dark background */
-  padding: 5px 0; /* Uniform padding with other sections */
-}
-
-#experience {
-  background-color: #214566; /* Consistent background color with projects */
-  color: #f4ebe2; /* Light text for readability on dark background */
-  padding: 5px 0; /* Uniform padding with other sections */
-}
-
-.education-details {
-  border-left: 4px solid #6d8184; /* Subtle left border using accent color */
-  padding: 20px;
-  margin: 20px 0; /* Space above and below for breathing room */
-}
-
-.education-details header h2 {
-  color: #83a27c; /* Title color consistent with other subtitles */
-  margin-bottom: 20px; /* Space below header */
-}
-
-.education-info h3 {
-  font-size: 24px; /* Slightly larger for emphasis */
-  color: #f6e7e4; /* Consistent light text color */
-  margin-bottom: 5px; /* Tighter margin for compact look */
-}
-
-.details {
-  list-style-type: none; /* Remove default list styling */
-  padding: 0;
-}
-
-.details li {
-  padding: 5px 0; /* Padding for list items to create space */
-  border-bottom: 1px solid #6d8184; /* Subtle separators for items */
-}
-
-.details li:last-child {
-  border-bottom: none; /* No border for the last item */
-}
-
-.dates {
-  display: block; /* Block display for its own line */
-  font-style: italic;
-  color: #6d8184;
-  margin-bottom: 10px; /* Space below the date */
-}
-
-/* Ensure responsiveness */
-@media (max-width: 800px) {
-  .education-details {
-    padding: 10px;
-    border-left: 2px solid #6d8184;
-  }
+  max-width: 100%;
+  height: auto; 
 }

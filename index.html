@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Carlie Stewart</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon"> <!-- Favicon link -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
@@ -39,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/user.png" />
+            <img src="images/user.png" class="interactive-image" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -56,7 +57,7 @@
               software development and and exploring how technology can solve
               real-world challenges. Additionally, I am eager to collaborate
               with others and contribute to projects that have a positive impact
-              on society.
+              on the community.
               
             <div class="tab-titles">
               <p
@@ -75,8 +76,20 @@
             <div class="tab-contents" id="skills">
               <div class="education-details">
                   <header><h2>Skills</h2></header>
-                  <ul class="details">
-                      <li>Python, Java, C, HTML, CSS, JavaScript, React, R, Django, Bootstrap, SQL, Linux, Powershell</li>
+                  <ul class="details enhanced-skills">
+                    <li><i class="fa-brands fa-python"></i> Python</li>
+                    <li><i class="fa-brands fa-java"></i> Java</li>
+                    <li><i class="fa-solid fa-c"></i> C</li>
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                    <li><i class="fa-brands fa-js-square"></i> JavaScript</li>
+                    <li><i class="fa-brands fa-react"></i> React</li>
+                    <li><i class="fa-brands fa-r-project"></i> R</li>
+                    <li><i class="fa-brands fa-python"></i> Django</li>
+                    <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+                    <li><i class="fa-solid fa-database"></i> SQL</li>
+                    <li><i class="fa-brands fa-github"></i> Git</li>
+                    <li><i class="fa-brands fa-linux"></i> Linux</li>
                   </ul>
               </div>
             </div>
@@ -85,9 +98,9 @@
               <div class="education-details">
                   <header><h2>Experience</h2></header>
                   <ul class="details">
-                      <li><span class="dates">August 2022 - Present</span><br />University of Virginia: FM IT Student Help Desk Technician</li>
-                      <li><span class="dates">May 2023 - August 2023</span><br />STIHL Inc: IT Intern</li>
-                      <li><span class="dates">August 2022 - May 2023</span><br />UVA CS 2100: Data Structures and Algorithms I Undergraduate Teaching Assistant</li>
+                      <li><span class="dates">August 2022 - Present</span><br /><strong>University of Virginia</strong>: FM IT Student Help Desk Technician</li>
+                      <li><span class="dates">May 2023 - August 2023</span><br /><strong>STIHL Inc.</strong>: Information Technology Intern</li>
+                      <li><span class="dates">August 2022 - May 2023</span><br /><strong>UVA CS 2100</strong>: Data Structures and Algorithms I Undergraduate Teaching Assistant</li>
                   </ul>
               </div>
           </div>
@@ -157,7 +170,7 @@
                 2024, this highlights a bit of my personality and academic
                 experiences. I hope this helps you learn a bit more about me!
               </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <a href="https://github.com/clstew47/portfolio" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
         </div>
@@ -236,25 +249,22 @@
             <p><i class="fa-regular fa-paper-plane"></i> ayu6cp@virginia.edu</p>
             <p><i class="fa-solid fa-phone"></i> 757-915-4697</p>
             <div class="social-icons">
-              <a href="https://www.instagram.com/carliestewartt"
-              ><i class="fa-brands fa-instagram"></i
+              <a href="https://www.instagram.com/carliestewartt" target="_blank"><i class="fa-brands fa-instagram"></i
               ></a>
-              <a href="https://www.facebook.com/carliestewartt"
+              <a href="https://www.facebook.com/carliestewartt" target="_blank"
                 ><i class="fa-brands fa-facebook"></i
               ></a>
-              <a href="https://www.linkedin.com/in/carliestewart"
+              <a href="https://www.linkedin.com/in/carliestewart" target="_blank"
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
-              <a href="https://github.com/clstew47/"
+              <a href="https://github.com/clstew47/" target="_blank"
                 ><i class="fa-brands fa-github-alt"></i
               ></a>
             </div>
-            <a href="images/Carlie Stewart Resume.pdf" download class="btn btn2"
-              >Download CV</a
-            >
+            <a href="images/Carlie Stewart Resume.pdf" target="_blank" class="btn btn2">View CV</a>
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
+            <form action="https://formsubmit.co/carlie.stewart@outlook.com" method="POST" />
               <input type="text" name="name" placeholder="Name" required />
               <input type="email" name="email" placeholder="Email" required />
               <textarea
@@ -269,7 +279,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Carlie Stewart 2024 <i class="fa-solid fa-cat"></i></p>
+        <p>&copy Carlie Stewart 2024 <i class="fa-solid fa-cat"></i></p>
       </div>
     </div>
 
@@ -297,7 +307,7 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "message sent successfully.";
+            msg.innerHTML = "Message sent successfully.";
             setTimeout(function () {
               msg.innerHTML = "";
             }, 5000);
