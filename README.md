@@ -11,14 +11,6 @@ This website is built using the following technologies:
 - **JavaScript** - for interactive elements.
 - **FontAwesome** - external libraries for icons.
 
-## Contact Information
-
-If you have any questions, please feel free to contact me:
-
-- **Email**: [ayu6cp@virginia.edu](mailto:ayu6cp@virginia.edu)
-- **LinkedIn**: [linkedin.com/in/carliestewart](https://www.linkedin.com/in/carliestewart)
-- **GitHub**: [github.com/clstew47](https://github.com/clstew47)
-
 ## Website Link
 Visit my portfolio here: https://clstew47.github.io/portfolio/
 
